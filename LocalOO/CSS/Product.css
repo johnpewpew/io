@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #f0f0f0;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.material-icons-outlined   {
+   margin: 10px;
+   align-items: center;
+   
+              
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.logout {
+    margin-top: auto;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.category-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.search-container {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input {
+    width: 21%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.search-button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5%
+}
+
+.pagination {
+    margin-top: 800px;
+    display: flex;
+    gap: 10px;
+}
+
+.page-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: black;
+    color: white;
+}
+
+/* Order Section */
+.order-section {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+
+
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.clear-button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.order-list {
+    height: 21cm;
+    overflow-y: scroll;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.pay-later, .pay-now {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pay-later {
+    background-color: #666;
+    color: white;
+}
+
+.pay-now {
+    background-color: #ccc;
+}
+

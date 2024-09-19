@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="meme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
+
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+</head>
+<body>
+
+    <!--<div class="sidenav">
+    <a href="/dashboard-views/transaction.html">Transactions</a>
+    </div>-->
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="nav-item home">
+                <span class="material-icons-outlined">home</span>HOME
+            </div>
+
+            <div class="nav-item pending">
+                <span class="material-icons-outlined">pending</span>PENDING
+                
+            </div>
+            <div class="nav-item logout">
+                <span class="material-icons-outlined">logout</span>Logout
+            </div>
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+           <div class="search-container">
+                    <input type="text" placeholder="Search" id="search-input">
+                    <button class="search-button"><h3>Search</h3></button>
+           </div>
+           <div class="buttons-container">
+                <button class="category-button"><h5>MILKTEA</h5></button>
+                <button class="category-button"><h5>COFFEE</h5></button>
+            </div>
+            
+
+            <div class="pagination">
+                <button class="page-button active">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">Last</button>
+                <button class="page-button">Next</button>
+            </div>
+        </div>
+
+        <!-- Order Section -->
+        <div class="order-section">
+            <div class="order-header">
+                <h1>Current Order</h1>
+                <button class="clear-button"><h3>Clear</h3></button>
+            </div>
+            <div class="order-list" id="order-list">
+                <!-- Orders will be displayed here -->
+            </div>
+            <div class="order-footer">
+
+                <p>Total: ₱<span id="total-amount">00</span></p>
+
+                <div class="payment-buttons">
+                    <button class="pay-later"><h1>Pay Later</h1></button>
+                    <button class="pay-now"><h1>Pay Now</h1></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

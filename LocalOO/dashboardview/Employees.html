@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/employees.css">
+    
+    <title>Employess</title>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="/Dashview.html" style="margin-top: 30px;">Dashboard</a>
+        <a href="/dashboard-views/item.html">Items</a>
+        <a href="/dashboard-views/categories.html">Categories</a>
+        <a href="/dashboard-views/Employees.html">Employees</a>
+        <a href="/dashboard-views/transaction.html">Transactions</a>
+        <a href="/dashboard-views/admin.html">Admin Profile</a>
+    </div>
+
+    <div class="container">
+        <!-- Employee Details Section -->
+        <div class="employee-details">
+            <h2>Employee Details</h2>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Employee Image" id="employee-image">
+            </div>
+            <div class="form-group">
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="employee-fname">First Name</label>
+                <input type="text" id="employee-fname" placeholder="First Name" readonly>
+            </div>
+            <div class="form-group">
+                <label for="employee-lname">Last Name</label>
+                <input type="text" id="employee-lname" placeholder="Last Name" readonly>
+            </div>
+            <div class="form-group">
+                <label for="employee-username">Username</label>
+                <input type="text" id="employee-username" readonly>
+            </div>
+            <div class="form-group">
+                <label for="employee-bday">B-day</label>
+                <input type="date" id="employee-bday" readonly>
+            </div>
+            <div class="form-group">
+                <label for="employee-age">Age</label>
+                <input type="number" id="employee-age" placeholder="Age" readonly>
+            </div>
+            <button id="register-btn">Register Employee</button>
+            <button id="delete-btn">Delete Employee</button>
+        </div>
+
+        <!-- Employee List Section -->
+        <div class="employee-list">
+            <h2>Employee List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Icon</th>
+                        <th>Username</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Age</th>
+                        <th>BirthDate</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list-body">
+                    <!-- Employee rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Registration Form (Hidden Initially) -->
+    <div id="register-form" class="register-form">
+        <h2>Register New Employee</h2>
+        <input type="file" id="new-employee-image" accept="image/*" placeholder="Choose Image">
+        <input type="text" id="new-employee-fname" placeholder="Enter First Name">
+        <input type="text" id="new-employee-lname" placeholder="Enter Last Name">
+        <input type="text" id="new-employee-username" placeholder="Enter Username">
+        <input type="date" id="new-employee-bday">
+        <input type="number" id="new-employee-age" placeholder="Enter Age">
+        <button id="submit-register-btn">Submit</button>
+    </div>
+
+    <script src="/JAVA/employees.js"></script>
+</body>
+</html>

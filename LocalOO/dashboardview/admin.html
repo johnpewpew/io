@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/design/admin.css">
+	<link rel="stylesheet" href="/CSS/adminstyles.css">
+
+    <title>Admin</title>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="/Dashview.html" style="margin-top: 30px;">Dashboard</a>
+        <a href="/dashboard-views/item.html">Items</a>
+        <a href="/dashboard-views/categories.html">Categories</a>
+        <a href="/dashboard-views/Employees.html">Employees</a>
+        <a href="/dashboard-views/transaction.html">Transactions</a>
+        <a href="/dashboard-views/admin.html">Admin Profile</a>
+    </div>
+    
+    <div class="form-container">
+        <div class="admin-settings">
+            <h2>Admin Settings</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" name="current-password">
+
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new-password">
+
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+
+                <div class="show-password">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password">Show Password</label>
+                </div>
+
+                <button type="submit">Update Account</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

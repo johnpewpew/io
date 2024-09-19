@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/item.css">
+    <title>Items</title>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="/Dashview.html" style="margin-top: 30px;">Dashboard</a>
+        <a href="/dashboard-views/item.html">Items</a>
+        <a href="/dashboard-views/categories.html">Categories</a>
+        <a href="/dashboard-views/Employees.html">Employees</a>
+        <a href="/dashboard-views/transaction.html">Transactions</a>
+        <a href="/dashboard-views/admin.html">Admin Profile</a>
+    </div>
+
+
+    
+    <div class="container">
+        <!-- Item Details Section -->
+        <div class="item-details">
+            <h2>Item Details</h2>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/200" alt="Item Image" id="item-image">
+            </div>
+            <div class="form-group">
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="item-name">Item Name</label>
+                <input type="text" id="item-name" placeholder="Item Name">
+            </div>
+            <div class="form-group">
+                <label for="item-description">Description</label>
+                <input type="text" id="item-description" placeholder="Description">
+            </div>
+            <div class="form-group">
+                <label for="item-quantity">Quantity</label>
+                <input type="number" id="item-quantity" placeholder="Quantity">
+            </div>
+            <div class="form-group">
+                <label for="item-price">Price</label>
+                <input type="number" id="item-price" placeholder="Price">
+            </div>
+            <button id="add-btn">Add Item</button>
+            <button id="save-btn">Save Item</button>
+            <button id="update-btn">Update Item</button>
+            <button id="delete-btn">Delete Item</button>
+        </div>
+
+        <!-- Item List Section -->
+        <div class="item-list">
+            <h2>Item List</h2>
+            <input type="text" id="search-input" placeholder="Search items...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Icon</th>
+                        <th>Item Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="item-list-body">
+                    <!-- Item rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/JAVA/item.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/category.css">
+    <title>cathegories</title>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="/Dashview.html" style="margin-top: 30px;">Dashboard</a>
+        <a href="/dashboardview/item.html">Items</a>
+        <a href="/dashboardview/categories.html">Categories</a>
+        <a href="/dashboardview/Employees.html">Employees</a>
+        <a href="/dashboardview/transaction.html">Transactions</a>
+        <a href="/dashboardviewsadmin.html">Admin Profile</a>
+    </div>
+
+    <div class="container">
+        <!-- Category Details Section -->
+        <div class="category-details">
+            <h2>Category Details</h2>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/200" alt="Category Image" id="category-image">
+            </div>
+            <div class="form-group">
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="category-name">Category Name</label>
+                <input type="text" id="category-name" placeholder="Category Name">
+            </div>
+            <button id="add-btn">Add Category</button>
+            <button id="save-btn">Save Category</button>
+            <button id="update-btn">Update Category</button>
+            <button id="delete-btn">Delete Category</button>
+        </div>
+
+        <!-- Category List Section -->
+        <div class="category-list">
+            <h2>Category List</h2>
+            <input type="text" id="search-input" placeholder="Search categories...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Icon</th>
+                        <th>Category Name</th>
+                    </tr>
+                </thead>
+                <tbody id="category-list-body">
+                    <!-- Category rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/JAVA/category.js"></script>
+</body>
+</html>
